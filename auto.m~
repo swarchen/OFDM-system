@@ -1,0 +1,5 @@
+rawData = dlmread('auto9.txt');
+autocor = rawData([1:240],[1:2]);
+
+x = 1 : 1 : 240;
+h = plot(x,autocor([1:240],[1]),x,autocor([1:240],[2]));
